@@ -1,0 +1,37 @@
+services:
+	-
+		class: AlexSvorada\EspoCRM\PHPStan\Rules\Entities\DefineEntityTypeConstantRule
+		tags:
+			- phpstan.rules.rule
+	-
+		class: AlexSvorada\EspoCRM\PHPStan\Rules\Entities\DefineTemplateTypeConstantRule
+		tags:
+			- phpstan.rules.rule
+	-
+		class: AlexSvorada\EspoCRM\PHPStan\Rules\Entities\NoEntityManagerInEntityRule
+		tags:
+			- phpstan.rules.rule
+	-
+		class: AlexSvorada\EspoCRM\PHPStan\Rules\Hooks\NoSameEntitySaveRule
+		tags:
+			- phpstan.rules.rule
+	-
+		class: AlexSvorada\EspoCRM\PHPStan\Rules\Hooks\SaveRestrictedEntityFieldsRule
+		tags:
+			- phpstan.rules.rule
+	-
+		class: AlexSvorada\EspoCRM\PHPStan\Rules\Hooks\RequireOrderPropertyRule
+		tags:
+			- phpstan.rules.rule
+	-
+		class: AlexSvorada\EspoCRM\PHPStan\Rules\Controllers\OnlyOverrideParentMethodsRule
+		tags:
+			- phpstan.rules.rule
+	-
+		class: AlexSvorada\EspoCRM\PHPStan\Rules\Services\CallParentConstructorRule
+		tags:
+			- phpstan.rules.rule
+	-
+		class: AlexSvorada\EspoCRM\PHPStan\Rules\Services\ServiceMustExtendRecordRule
+		tags:
+			- phpstan.rules.rule
