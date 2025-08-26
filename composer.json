@@ -1,0 +1,36 @@
+{
+	"name": "alexsvorada/phpstan-espocrm",
+	"description": "PHPStan rules for EspoCRM development",
+	"type": "phpstan-extension",
+	"license": "MIT",
+	"keywords": [
+		"phpstan",
+		"espocrm",
+		"static-analysis",
+		"code-quality"
+	],
+	"homepage": "https://github.com/alexsvorada/phpstan-espocrm",
+	"authors": [
+		{
+			"name": "Alex Svorada",
+			"email": "alex@svorada.eu",
+			"homepage": "https://github.com/alexsvorada"
+		}
+	],
+	"require": {
+		"php": "^8.1",
+		"phpstan/phpstan": "^2.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"AlexSvorada\\EspoCRM\\PHPStan\\Rules\\": "PHPStan/Rules/"
+		}
+	},
+	"extra": {
+		"phpstan": {
+			"includes": [
+				"extension.neon"
+			]
+		}
+	}
+}
